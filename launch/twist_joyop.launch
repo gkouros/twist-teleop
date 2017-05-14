@@ -1,0 +1,17 @@
+<launch>
+
+  <arg name="max_linvel" default="0.5"/>
+  <arg name="max_angvel" default="1.0"/>
+  <arg name="cmd_topic" default="/cmd_vel"/>
+
+  <node name="joy" type="joy_node" pkg="joy"/>
+
+  <node
+    name="twist_joyop"
+    pkg="twist_teleop"
+    type="twist_joyop.py"
+    output='screen'
+    args="$(arg max_linvel) $(arg max_angvel) $(arg cmd_topic)"/>
+
+</launch>
+
