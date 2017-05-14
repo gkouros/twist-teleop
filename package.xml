@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>twist_teleop</name>
+  <version>0.0.0</version>
+  <description>
+    The twist_teleop package contains keyboard and joystick teleoperation
+    scripts for robots that listen to twist commands.
+  </description>
+
+  <maintainer email="george.kouros.ece@gmail.com">George Kouros</maintainer>
+
+  <license>BSD</license>
+
+  <author email="george.kouros.ece@gmail.com">George Kouros</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <export>
+  </export>
+</package>
