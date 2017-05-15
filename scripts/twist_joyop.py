@@ -83,7 +83,7 @@ class TwistJoyop:
 
     def print_state(self):
         sys.stderr.write('\x1b[2J\x1b[H')
-        rospy.loginfo('\x1b[1M\r************* twist_keyop.py ***************')
+        rospy.loginfo('\x1b[1M\r************* twist_joyop.py ***************')
         rospy.loginfo('\x1b[1M\rUse the arrows to change linvel and angvel')
         rospy.loginfo('\x1b[1M\rUse space and tab to clear linvel and angvel')
         rospy.loginfo('\x1b[1M\rPublishing to: ' + self.cmd_topic)
