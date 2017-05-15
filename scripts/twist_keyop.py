@@ -111,7 +111,7 @@ class TwistKeyop:
         rospy.loginfo('\x1b[1M\r********************************************')
         rospy.loginfo('\x1b[1M\r'
                 '\033[34;1mlinvel: \033[32;1m%0.2f m/s, '
-                '\033[34;1mSteer Angle: \033[32;1m%0.2f rad\033[0m',
+                '\033[34;1mangvel: \033[32;1m%0.2f rad\033[0m',
                 self.linvel, self.angvel)
         rospy.loginfo('\x1b[1M\r********************************************')
 
@@ -142,7 +142,7 @@ class TwistKeyop:
                             self.angvel,
                             self.angvel_range[0],
                             self.angvel_range[1])
-                    self.print_state()
+                self.print_state()
             elif key == '\x03' or key == '\x71':  # ctr-c or q
                 break
             else:
